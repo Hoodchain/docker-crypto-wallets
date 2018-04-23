@@ -16,5 +16,8 @@ bash ./scripts/setup.sh
 
 To run:
 ```bash
-scripts/wallets.sh <wallet>
+scripts/wallets.sh <wallet name in lower case>
 ```
+
+### DISCLAIMER:
+This has only been tested using debian stretch. Before you proceed to using the wallet, please look in the docker-compose.yml file and each Dockerfile
