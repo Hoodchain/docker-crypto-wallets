@@ -56,8 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env
-
-files/Neon/
-files/Eidoo
-files/Exodus
+files/
+data/Neon/
+data/Eidoo/
+data/Exodus/
 scripts/node_modules/

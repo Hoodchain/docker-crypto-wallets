@@ -8,7 +8,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority
-      - ./files/Neon:/home/developer/.config/Neon
+      - ./data/Neon:/home/developer/.config/Neon
   exodus:
     build: ./wallets/exodus
     environment:
@@ -16,7 +16,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority
-      - ./files/Exodus:/home/developer/.config/Exodus
+      - ./data/Exodus:/home/developer/.config/Exodus
     command: ['/home/developer/exodus/Exodus']
 
   eidoo:
@@ -26,7 +26,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority
-      - ./files/Eidoo:/home/developer/.config/eidoo
+      - ./data/Eidoo:/home/developer/.config/eidoo
     command: ['/usr/bin/eidoo']
 
   
