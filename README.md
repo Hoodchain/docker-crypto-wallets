@@ -7,6 +7,9 @@ This is a collection of crypto currency wallets built in docker containers to us
 * Eidoo
 
 ## Instructions
+To install:
 ```bash
-./scripts/setup.sh
+git clone https://github.com/Hoodchain/docker-crypto-wallets
+cd wallets
+bash ./scripts/setup.sh
 ```
