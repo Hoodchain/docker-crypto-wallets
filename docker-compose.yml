@@ -1,7 +1,7 @@
 version: '2'
 services:
   neon:
-    build: ./neon
+    build: ./wallets/neon
     command: ['neon']
     environment:
       DISPLAY: $DISPLAY
@@ -10,13 +10,23 @@ services:
       - $HOME/.Xauthority:/root/.Xauthority
       - ./files/Neon:/home/developer/.config/Neon
   exodus:
-    build: ./exodus
+    build: ./wallets/exodus
     environment:
       DISPLAY: $DISPLAY
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority
-      - ./files/Neon:/home/developer/.config/Neon
+      - ./files/Exodus:/home/developer/.config/Exodus
     command: ['/home/developer/exodus/Exodus']
 
-    
+  eidoo:
+    build: ./wallets/eidoo
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority
+      - ./files/Eidoo:/home/developer/.config/eidoo
+    command: ['/usr/bin/eidoo']
+
+  
