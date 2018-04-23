@@ -61,3 +61,6 @@ data/Neon/
 data/Eidoo/
 data/Exodus/
 scripts/node_modules/
+
+!/.gitigore/
+!/.dockerignore/
