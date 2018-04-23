@@ -3,7 +3,7 @@ This is a collection of crypto currency wallets built in docker containers to us
 
 My goal for this project is to have a nice and convention way to quickly access all my crypto currency assets.
 
-Evently, the project will evolve to include many, many, many more wallet, I plan to add 3 or more wallets a day.
+Evently, the project will evolve to include many, many, many, more wallets, I plan to add 3 or more wallets a day.
 Also, I am working on a crypto vault that will give you a nice graphical interface where you be able to securely encrypt all of your wallets.
 
 ## wallets
