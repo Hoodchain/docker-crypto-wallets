@@ -1,9 +1,9 @@
-FROM debian:stretch
+FROM vpnsector/debian-gui
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y wget 
+# RUN apt-get install -y wget 
 RUN wget https://github.com/CityOfZion/neon-wallet/releases/download/0.2.3/Neon_0.2.3_amd64.Linux.deb
-RUN apt-get install -y gconf2 gconf-service libnotify4 libappindicator1 libxtst6 libnss3 libxss1 libasound2
+# RUN apt-get install -y gconf2 gconf-service libnotify4 libappindicator1 libxtst6 libnss3 libxss1 libasound2
 RUN dpkg -i Neon_0.2.3_amd64.Linux.deb
 
 # Replace 1000 with your user / group id
