@@ -1,0 +1,22 @@
+version: '2'
+services:
+  neon:
+    build: ./neon
+    command: ['neon']
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority
+      - ./files/Neon:/home/developer/.config/Neon
+  exodus:
+    build: ./exodus
+    environment:
+      DISPLAY: $DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority
+      - ./files/Neon:/home/developer/.config/Neon
+    command: ['/home/developer/exodus/Exodus']
+
+    
