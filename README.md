@@ -13,3 +13,8 @@ git clone https://github.com/Hoodchain/docker-crypto-wallets
 cd wallets
 bash ./scripts/setup.sh
 ```
+
+To run:
+```bash
+scripts/wallets.sh <wallet>
+```
