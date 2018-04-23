@@ -16,7 +16,7 @@ bash ./scripts/setup.sh
 
 To run:
 ```bash
-scripts/wallets.sh <wallet name in lower case>
+scripts/wallets.sh <wallet_name_in_lower_case>
 ```
 
 ### DISCLAIMER:
