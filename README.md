@@ -20,5 +20,6 @@ scripts/wallets.sh <wallet_name_in_lower_case>
 ```
 
 ### DISCLAIMER:
-**You must have docker installed to use containers***
+**You must have docker installed to use containers**
+
 This has only been tested using debian stretch. Before you proceed to using the wallet, please look in the docker-compose.yml file and each Dockerfile
